@@ -1,0 +1,431 @@
+
+/*  typography */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
+body {
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: #4c4c4c;
+  
+}
+/* ***************************Element Styles******************************* */
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6  {
+  font-size: 14px;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.outline-0 {
+  outline: 0 !important;
+}
+.bg-primary-color {
+  background: #41228e !important;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.text-light {
+  color: #999999 !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+.rounded-lg {
+  border-radius: 15px;
+}
+/* icon */
+.icon {
+  font-size: 45px;
+}
+.icon-bg {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.icon-light {
+  color: #c8d5ef;
+}
+
+.bi{
+  font-size: 30px !important;
+
+}
+.bi-lg{
+  font-size: 40px !important;
+
+}
+.bi:hover{
+color:#171a21;
+}
+
+/*end icon */
+
+
+
+/* ***************************END universal variables******************************* */
+
+
+/* -----------------navbar---------------- */
+.brand-name{
+  color: #171a21;
+  font-family: "Playfair Display", serif;
+}
+.h3 {
+  font-size: 40px;
+}
+.navigation {
+  padding: 40px 130px;
+  transition: 0.3s ease;
+}
+.navigation.nav-bg {
+  background-color: #41228e;
+  padding: 15px 100px;
+}
+.navbar .nav-item .nav-link {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.nav-link:hover{
+  color: #171a21 !important;
+}
+.navbar .nav-item.active {
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+/* -----------------End navbar---------------- */
+/* ----------------Header section----------------  */
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+h1 {
+  font-size: 80px;
+}
+.hero-area {
+  padding: 200px 0 200px;
+  position: relative;
+}
+.hero-area h1 {
+  position: relative;
+  z-index: 2;
+}
+.img-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.zindex-1 {
+  z-index: 1;
+}
+/* -----------------END Hader section---------------- */
+
+/* -----------------  SECTION Title---------------- */
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  margin-bottom: 80px;
+  font-family: "Playfair Display", serif;
+}
+
+/* ----------------- END SECTION Title---------------- */
+
+
+/* -----------------Education section---------------- */
+.section-bg-primary
+{
+    background-color: #36197F;
+}
+.shadow {
+  box-shadow: 0px 10px 30.1px 1px rgba(2, 2, 2, 0.34) !important;
+}
+
+/* -----------------End Education section---------------- */
+/* -----------------Services section---------------- */
+.card {
+  border: 0;
+}
+.hover-shadow {
+  transition: 0.2s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+}
+.active-bg-primary {
+  transition: 0.3s ease;
+  background: #41228e;
+}
+.active-bg-primary * {
+  color: #fff;
+}
+/* -----------------End Services section---------------- */
+/* ----------------------- portfolio ----------------------- */
+/* Button style */
+.btn {
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  padding: 16px 44px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+}
+/*END button*/
+.hover-wrapper {
+  overflow: hidden;
+}
+.hover-wrapper img {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+.hover-wrapper:hover img {
+  transform: scale(1);
+}
+.hover-wrapper:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.btn-sm {
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+/* -----------------------END portfolio ----------------------- */
+
+/* ---------------------- testimonial --------------------- */
+.testimonial-content strong {
+  color: #2bfdff;
+  font-weight: normal;
+}
+
+.testimonial-bg-shapes .container {
+  position: relative;
+  z-index: 1;
+}
+.testimonial-bg-shapes .bg-map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rounded-circle{
+  height: 100px;
+}
+/* slick slider buttons */
+.slick-dots {
+  text-align: center;
+  padding-left: 0;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 2px;
+}
+.slick-dots li.slick-active button {
+  background: #fff;
+  width: 25px;
+}
+.slick-dots li button {
+  height: 6px;
+  width: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  border: 0;
+}
+a:focus,
+button:focus,
+select:focus {
+  outline: 0;
+}
+/* /slick slider */
+
+/* ----------------------End testimonial --------------------- */
+
+/* ---------------------Blog-------------------------- */
+.btn-xs {
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.btn-primary {
+  background: #41228e;
+  color: #fff;
+}
+.btn-primary:active {
+  background: #542cb7 !important;
+}
+.btn-primary:hover {
+  background: #542cb7;
+}
+.btn-primary.focus, .btn-primary.active {
+  background: #542cb7 !important;
+  box-shadow: none !important;
+}
+/* ---------------------END blog------------------------- */
+/* --------------------- Contact------------------------- */
+.section-on-footer {
+  margin-bottom: -250px;
+}
+.shadow-down {
+  position: relative;
+}
+.shadow-down::before {
+  position: absolute;
+  content: "";
+  box-shadow: 0px 0px 80.75px 14.25px rgba(54, 129, 190, 0.34);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.form-control {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #c7c7c7;
+  height: 60px;
+}
+.form-control:focus {
+  border-color: #41228e;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+textarea.form-control {
+  height: 120px;
+}
+
+/* ---------------------END Contact------------------------- */
+/* -------------------Footer------------------ */
+.bg-dark {
+  background-color: #222222 !important;
+}
+.footer-section {
+  padding-top: 200px;
+}
+
+.font-secondary {
+  font-family: "Playfair Display", serif !important;
+}
+.paragraph-lg{
+  font-size: 22px;
+}
+
+/* -----------------End Footer------------------ */
+
+
+/* -------------------Selection by mouse--------------- */
+::-moz-selection {
+  background: #542cb7;
+  color: #fff;
+}
+
+::selection {
+  background: #542cb7;
+  color: #fff;
+}
+/* -------------------///Selection by mouse--------------- */
+
+
+
+/* ***************************All media quaryies************************** */
+/* FOR NAVBAR */
+@media (max-width: 767px) {
+  .list-unstyled {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  li{
+    margin-left: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .navigation.nav-bg {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .navigation {
+    padding: 20px;
+    background: #41228e;
+  }
+}
+/* FOR HEADER SECTION  */
+@media (max-width: 767px) {
+  .hero-area {
+    padding: 150px 0 150px;
+    overflow: hidden;
+  }
+}
+
+/* FOR FONTS  */
+@media (max-width: 991px) {
+  h1, .h1 {
+    font-size: 65px;
+  }
+}
+
+h2, .h2 {
+  font-size: 60px;
+}
+@media (max-width: 991px) {
+  h2, .h2 {
+    font-size: 50px;
+  }
+}
+
+
